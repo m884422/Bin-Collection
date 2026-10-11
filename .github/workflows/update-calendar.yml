@@ -1,0 +1,52 @@
+name: Refresh and publish bin calendar
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  schedule:
+    # GitHub cron is UTC. These two UTC times plus the London-time gate below
+    # give one scheduled run at 00:10 Europe/London in both GMT and BST.
+    - cron: "10 0 * * *"
+    - cron: "10 23 * * *"
+
+jobs:
+  london_midnight_gate:
+    runs-on: ubuntu-latest
+    outputs:
+      should_update: ${{ steps.gate.outputs.should_update }}
+    steps:
+      - name: Select the 00:10 London run (pushes also publish automatically)
+        id: gate
+        shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          SCHEDULE_CRON: ${{ github.event.schedule }}
+        run: |
+          if [[ "$EVENT_NAME" != "schedule" ]]; then
+            echo "should_update=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          london_offset="$(TZ=Europe/London date +%z)"
+          if [[ "$SCHEDULE_CRON" == "10 0 * * *" && "$london_offset" == "+0000" ]] || \
+             [[ "$SCHEDULE_CRON" == "10 23 * * *" && "$london_offset" == "+0100" ]]; then
+            echo "should_update=true" >> "$GITHUB_OUTPUT"
+            echo "This is the 00:10 Europe/London refresh."
+          else
+            echo "should_update=false" >> "$GITHUB_OUTPUT"
+            echo "Skipping the UTC schedule that is not midnight in London."
+          fi
+
+  build_and_deploy:
+    needs: london_midnight_gate
+    if: needs.london_midnight_gate.outputs.should_update == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    concurrency:
+      group: github-pages
+      cancel-in-progress: 
