@@ -8,94 +8,9 @@ X-WR-CALDESC:Current and following month from Manchester City Council
 X-WR-TIMEZONE:Europe/London
 REFRESH-INTERVAL;VALUE=DURATION:P1D
 BEGIN:VEVENT
-UID:mcc-bin-collection-20261002@bin-calendar.invalid
-DTSTAMP:20261031T052345Z
-LAST-MODIFIED:20261031T052345Z
-SEQUENCE:0
-DTSTART;VALUE=DATE:20261002
-DTEND;VALUE=DATE:20261003
-SUMMARY:Bin Collection - Grey\, brown\, green
-DESCRIPTION:Manchester City Council collection. Put the listed bin or bins 
- out by 07:00 on collection day. Check the council's live checker for chang
- es.
-URL:https://manchester.portal.uk.empro.verintcloudservices.com/site/myaccou
- nt/request/sr_bin_coll_day_checker
-CATEGORIES:Waste
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:mcc-bin-collection-20261009@bin-calendar.invalid
-DTSTAMP:20261031T052345Z
-LAST-MODIFIED:20261031T052345Z
-SEQUENCE:0
-DTSTART;VALUE=DATE:20261009
-DTEND;VALUE=DATE:20261010
-SUMMARY:Bin Collection - Blue
-DESCRIPTION:Manchester City Council collection. Put the listed bin or bins 
- out by 07:00 on collection day. Check the council's live checker for chang
- es.
-URL:https://manchester.portal.uk.empro.verintcloudservices.com/site/myaccou
- nt/request/sr_bin_coll_day_checker
-CATEGORIES:Waste
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:mcc-bin-collection-20261016@bin-calendar.invalid
-DTSTAMP:20261031T052345Z
-LAST-MODIFIED:20261031T052345Z
-SEQUENCE:0
-DTSTART;VALUE=DATE:20261016
-DTEND;VALUE=DATE:20261017
-SUMMARY:Bin Collection - Grey\, brown\, green
-DESCRIPTION:Manchester City Council collection. Put the listed bin or bins 
- out by 07:00 on collection day. Check the council's live checker for chang
- es.
-URL:https://manchester.portal.uk.empro.verintcloudservices.com/site/myaccou
- nt/request/sr_bin_coll_day_checker
-CATEGORIES:Waste
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:mcc-bin-collection-20261023@bin-calendar.invalid
-DTSTAMP:20261031T052345Z
-LAST-MODIFIED:20261031T052345Z
-SEQUENCE:0
-DTSTART;VALUE=DATE:20261023
-DTEND;VALUE=DATE:20261024
-SUMMARY:Bin Collection - Blue
-DESCRIPTION:Manchester City Council collection. Put the listed bin or bins 
- out by 07:00 on collection day. Check the council's live checker for chang
- es.
-URL:https://manchester.portal.uk.empro.verintcloudservices.com/site/myaccou
- nt/request/sr_bin_coll_day_checker
-CATEGORIES:Waste
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:mcc-bin-collection-20261030@bin-calendar.invalid
-DTSTAMP:20261031T052345Z
-LAST-MODIFIED:20261031T052345Z
-SEQUENCE:0
-DTSTART;VALUE=DATE:20261030
-DTEND;VALUE=DATE:20261031
-SUMMARY:Bin Collection - Grey\, brown\, green
-DESCRIPTION:Manchester City Council collection. Put the listed bin or bins 
- out by 07:00 on collection day. Check the council's live checker for chang
- es.
-URL:https://manchester.portal.uk.empro.verintcloudservices.com/site/myaccou
- nt/request/sr_bin_coll_day_checker
-CATEGORIES:Waste
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:mcc-bin-collection-20261106@bin-calendar.invalid
-DTSTAMP:20261031T052345Z
-LAST-MODIFIED:20261031T052345Z
+DTSTAMP:20261101T054953Z
+LAST-MODIFIED:20261101T054953Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
@@ -121,8 +36,8 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mcc-bin-collection-20261113@bin-calendar.invalid
-DTSTAMP:20261031T052345Z
-LAST-MODIFIED:20261031T052345Z
+DTSTAMP:20261101T054953Z
+LAST-MODIFIED:20261101T054953Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
@@ -149,8 +64,8 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mcc-bin-collection-20261120@bin-calendar.invalid
-DTSTAMP:20261031T052345Z
-LAST-MODIFIED:20261031T052345Z
+DTSTAMP:20261101T054953Z
+LAST-MODIFIED:20261101T054953Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
@@ -176,8 +91,8 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mcc-bin-collection-20261127@bin-calendar.invalid
-DTSTAMP:20261031T052345Z
-LAST-MODIFIED:20261031T052345Z
+DTSTAMP:20261101T054953Z
+LAST-MODIFIED:20261101T054953Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
@@ -198,6 +113,116 @@ DESCRIPTION:Put out grey\, brown and green bins tonight for tomorrow's coll
 END:VALARM
 BEGIN:VALARM
 TRIGGER;VALUE=DATE-TIME:20261127T070000Z
+ACTION:DISPLAY
+DESCRIPTION:Collection today: put out grey\, brown and green bins by 07:00.
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mcc-bin-collection-20261204@bin-calendar.invalid
+DTSTAMP:20261101T054953Z
+LAST-MODIFIED:20261101T054953Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:Bin Collection - Blue
+DESCRIPTION:Manchester City Council collection. Put the listed bin or bins 
+ out by 07:00 on collection day. Check the council's live checker for chang
+ es.
+URL:https://manchester.portal.uk.empro.verintcloudservices.com/site/myaccou
+ nt/request/sr_bin_coll_day_checker
+CATEGORIES:Waste
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261203T210000Z
+ACTION:DISPLAY
+DESCRIPTION:Put out blue bin tonight for tomorrow's collection.
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261204T070000Z
+ACTION:DISPLAY
+DESCRIPTION:Collection today: put out blue bin by 07:00.
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mcc-bin-collection-20261211@bin-calendar.invalid
+DTSTAMP:20261101T054953Z
+LAST-MODIFIED:20261101T054953Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:Bin Collection - Grey\, brown\, green
+DESCRIPTION:Manchester City Council collection. Put the listed bin or bins 
+ out by 07:00 on collection day. Check the council's live checker for chang
+ es.
+URL:https://manchester.portal.uk.empro.verintcloudservices.com/site/myaccou
+ nt/request/sr_bin_coll_day_checker
+CATEGORIES:Waste
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261210T210000Z
+ACTION:DISPLAY
+DESCRIPTION:Put out grey\, brown and green bins tonight for tomorrow's coll
+ ection.
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261211T070000Z
+ACTION:DISPLAY
+DESCRIPTION:Collection today: put out grey\, brown and green bins by 07:00.
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mcc-bin-collection-20261218@bin-calendar.invalid
+DTSTAMP:20261101T054953Z
+LAST-MODIFIED:20261101T054953Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:Bin Collection - Blue
+DESCRIPTION:Manchester City Council collection. Put the listed bin or bins 
+ out by 07:00 on collection day. Check the council's live checker for chang
+ es.
+URL:https://manchester.portal.uk.empro.verintcloudservices.com/site/myaccou
+ nt/request/sr_bin_coll_day_checker
+CATEGORIES:Waste
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261217T210000Z
+ACTION:DISPLAY
+DESCRIPTION:Put out blue bin tonight for tomorrow's collection.
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261218T070000Z
+ACTION:DISPLAY
+DESCRIPTION:Collection today: put out blue bin by 07:00.
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mcc-bin-collection-20261225@bin-calendar.invalid
+DTSTAMP:20261101T054953Z
+LAST-MODIFIED:20261101T054953Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261225
+DTEND;VALUE=DATE:20261226
+SUMMARY:Bin Collection - Grey\, brown\, green
+DESCRIPTION:Manchester City Council collection. Put the listed bin or bins 
+ out by 07:00 on collection day. Check the council's live checker for chang
+ es.
+URL:https://manchester.portal.uk.empro.verintcloudservices.com/site/myaccou
+ nt/request/sr_bin_coll_day_checker
+CATEGORIES:Waste
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261224T210000Z
+ACTION:DISPLAY
+DESCRIPTION:Put out grey\, brown and green bins tonight for tomorrow's coll
+ ection.
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261225T070000Z
 ACTION:DISPLAY
 DESCRIPTION:Collection today: put out grey\, brown and green bins by 07:00.
 END:VALARM
